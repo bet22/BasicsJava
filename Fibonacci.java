@@ -1,6 +1,6 @@
-/**
-* Расчитываем число Фибаначи
-* И замеряем время вычисления
+п»ї/**
+* Р Р°СЃС‡РёС‚С‹РІР°РµРј С‡РёСЃР»Рѕ Р¤РёР±Р°РЅР°С‡Рё
+* Р Р·Р°РјРµСЂСЏРµРј РІСЂРµРјСЏ РІС‹С‡РёСЃР»РµРЅРёСЏ
 * @autor Betyov A.A.
 * @since 02.02.2018
 * @version 1
@@ -14,18 +14,18 @@ public class Fibonacci {
   public static void main(String[] args){
 
     Scanner scan = new Scanner(System.in);
-    System.out.println("Расчет числа Фибаначи. Если ввести число больше 50, то придётся долго ждать...");
-    System.out.print("Введите число: ");
+    System.out.println("Р Р°СЃС‡РµС‚ С‡РёСЃР»Р° Р¤РёР±Р°РЅР°С‡Рё. Р•СЃР»Рё РІРІРµСЃС‚Рё С‡РёСЃР»Рѕ Р±РѕР»СЊС€Рµ 50, С‚Рѕ РїСЂРёРґС‘С‚СЃСЏ РґРѕР»РіРѕ Р¶РґР°С‚СЊ...");
+    System.out.print("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ");
 
     int a = scan.nextInt();
     long start = System.currentTimeMillis();
-    System.out.print("Число Фибаначи = " + fib(a));
+    System.out.print("Р§РёСЃР»Рѕ Р¤РёР±Р°РЅР°С‡Рё = " + fib(a));
     long timeWorkCode = (System.currentTimeMillis() - start)/1000;  
     System.out.println();
-    System.out.print("Время работы программы = " + timeWorkCode);
+    System.out.print("Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹ РїСЂРѕРіСЂР°РјРјС‹ = " + timeWorkCode);
   }
 
-//Сам расчёт числа Фибаначи
+//РЎР°Рј СЂР°СЃС‡С‘С‚ С‡РёСЃР»Р° Р¤РёР±Р°РЅР°С‡Рё
   static int fib (int n) {
 
    if (n==1 || n == 2) {
