@@ -1,5 +1,5 @@
-import java.util.Arrays;
-// Тестируем что быстрее. Метод sort или просто пройти и найти числа одним проходом
+п»їimport java.util.Arrays;
+// РўРµСЃС‚РёСЂСѓРµРј С‡С‚Рѕ Р±С‹СЃС‚СЂРµРµ. РњРµС‚РѕРґ sort РёР»Рё РїСЂРѕСЃС‚Рѕ РїСЂРѕР№С‚Рё Рё РЅР°Р№С‚Рё С‡РёСЃР»Р° РѕРґРЅРёРј РїСЂРѕС…РѕРґРѕРј
 
 class SortOrFind{
   public static void main(String[] args){
@@ -9,20 +9,20 @@ class SortOrFind{
     int one = 0;
     int two = 300;
     
-// Заполняем массив arr случайными чистами в диапозоне от one до two
+// Р—Р°РїРѕР»РЅСЏРµРј РјР°СЃСЃРёРІ arr СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃС‚Р°РјРё РІ РґРёР°РїРѕР·РѕРЅРµ РѕС‚ one РґРѕ two
     for (int i=0; i<arr.length; i++){
       arr[i] = (int)(Math.random()*(two-one))+one;
     }
 
-// Записываем текущее время в переменную first
+// Р—Р°РїРёСЃС‹РІР°РµРј С‚РµРєСѓС‰РµРµ РІСЂРµРјСЏ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ first
     long first = System.currentTimeMillis();
 
-// Сортируем данные в массиве
+// РЎРѕСЂС‚РёСЂСѓРµРј РґР°РЅРЅС‹Рµ РІ РјР°СЃСЃРёРІРµ
     Arrays.sort(arr);
 
     long middle = System.currentTimeMillis();
 
-// Расчитываем время сортировки
+// Р Р°СЃС‡РёС‚С‹РІР°РµРј РІСЂРµРјСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё
     long timeSort = middle - first;
 
     for (int i=0; i<arr.length; i++){
@@ -31,7 +31,7 @@ class SortOrFind{
     
     long last = System.currentTimeMillis();
     
-    System.out.println("Время выполнения сортировки: " + timeSort + "\nВремя выполнения прохода: "+ (last - middle) + ",\nКоличество повторений = " + repeat);
+    System.out.println("Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё: " + timeSort + "\nР’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ РїСЂРѕС…РѕРґР°: "+ (last - middle) + ",\nРљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРІС‚РѕСЂРµРЅРёР№ = " + repeat);
 
   }
 }
